@@ -1,5 +1,6 @@
 ﻿define h = Character("Helena")
 define f = Character("Mother Fatima")
+define hm = Character("???")
 
 label start:
 
@@ -85,6 +86,28 @@ label start:
     ## Scene Change
 
     "I made my way to the confessional booth in a hurry."
+
+    "The person behind the screen stirred as the sliding door behind me snuffed out what remained of the natural light."
+
+    "I lit a candle and took my seat."
+
+    h "Were you waiting long?"
+
+    "I started calmly."
+
+    hm "Not at all, ...{h}m-mother."
+
+    "There was a hesitation in her voice, mixed with something I couldn't quite place."
+
+    "I couldn't hold back a light giggle."
+
+    hm "Ah-I'm.. I-I don't do this often. I'm sorry if I did something wrong..."
+
+    "It seems the giggle may have sent her into a panic."
+
+    h "I apologize. I should not have laughed."
+
+    h "You have done nothing wrong. I am here to listen."
 
     
 
