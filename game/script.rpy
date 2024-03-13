@@ -1,6 +1,7 @@
-﻿define h = Character("Helena")
+﻿define h = Character("Helen")
 define f = Character("Mother Fatima")
 define hm = Character("???")
+define c = Character("Cithara")
 
 label start:
 
@@ -65,7 +66,7 @@ label start:
 
     "But I can at least imagine myself in a world where I could for a couple moments every day."
 
-    f "Sister Helena… It is your turn to receive confessions today."
+    f "Sister Helen… It is your turn to receive confessions today."
 
     h "Ah… It slipped my mind, Mother Fatima… I will make my way-"
 
@@ -97,7 +98,7 @@ label start:
 
     hm "Not at all, ...{h}m-mother."
 
-    "There was a hesitation in her voice, mixed with something I couldn't quite place."
+    "There was a hesitation in her voice,  with something I could only assume was... {h}confusion?"
 
     "I couldn't hold back a light giggle."
 
@@ -108,6 +109,94 @@ label start:
     h "I apologize. I should not have laughed."
 
     h "You have done nothing wrong. I am here to listen."
+
+    h "...To more than just your confession, if you wish."
+
+    hm "..."
+
+    h "How about we start with names? I am Sister Helen."
+
+    hm "...I'm Dame Cithara... My mom named me after Erato's lyre."
+
+    h "Erato's lyre..."
+
+    "I made a useless mental note of the origin of the name, knowing full well I would never meet this stranger again."
+
+    h "A beautiful name."
+
+    c "As is yours, Sister Helen."
+
+    "My cheeks flushed as I tried to shake off the strange energy that had filled the booth."
+
+    h "What brings you to the booth today, Cithara?"
+
+    c "I'm afraid I'm here to confess my sins, Sister Helen."
+
+    c "For the temple has been so hospitable to myself and the other knights and yet I covet the attention of a temple nun."
+
+    "I halted in my seat, processing what she had just said."
+
+    h "The attention of a temple nun?"
+
+    h "{i}What could you possibly mean by that?{/i}"
+
+    "Is what I wanted to say, but I needed to be careful with what I said next."
+
+    c "I happened to see her in the library one passing night."
+
+    c "At first, I was simply intrigued. But as I scanned the book in her hands, I realized it was one of my favorite anthologies."
+
+    c "I did not dare approach her for my heart was set on her from that moment."
+
+    "I could feel my own heart racing as I listened to her account of events."
+
+    h "Was this anthology perchance a collection of poetry?"
+
+    c "How did you know?"
+
+    "My heart lept into my throat, but I fought with it to give some semblance of composure."
+
+    h "Poetry is very popular among the nuns in the temple."
+
+    "A lie. A bold-faced lie in the house of the holy pantheon. But my anonymity was at stake."
+
+    "Was it true that she could simply ask for my name and find out it was me all along?"
+
+    "Of course, but I could not let this leave this booth."
+
+    "The sisters were no more interested in poetry than they were in the process of milling flour."
+
+    "Hell, I only picked it up because one of the poems were mentioned in a smutty romance novel I was reading beforehand."
+
+    "But a romantic scandal? The temple would go absolutely feral."
+
+    c "I was told that the temple nuns could help me to sort through these thoughts through some form of counseling."
+
+    "A moment of silence passed where I considered lying and refusing her, but my conscience prevailed."
+
+    h "This is true, we at the temple are trained in many trades in order to better serve our community."
+
+    c "Then you'll help me get rid of these feelings?"
+
+    h "Well, Cithara... Fortunately, there is nothing in our teachings that says there is anything wrong with ...{h}becoming infatuated with a nun."
+
+    h "Though temple nuns rarely leave the grounds, as our days are filled with prayer and charity work."
+
+    h "I can help you to sort through your feelings, but I must ask that you do not act on them."
+
+    h "Not only for her sake, but for yours as well."
+
+    "My hand found it's way to my notepad, and I wrote down my office hours."
+
+    "I temporarily lifted the screen, being sure to remain in the shadows as I handed her the paper."
+
+    h "Please return at any of these times and we will continue your counseling."
+
+    "She took the paper and paused to read it."
+
+    c "Thank you, Sister Helen. I will come to your office as soon as I am done training."
+
+    ## Scene Change
 
     
 
