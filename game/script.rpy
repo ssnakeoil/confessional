@@ -2,6 +2,7 @@
 define f = Character("Mother Fatima")
 define hm = Character("???")
 define c = Character("Cithara")
+define t = Character("Sister Trinity")
 
 label start:
 
@@ -196,7 +197,26 @@ label start:
 
     c "Thank you, Sister Helen. I will come to your office as soon as I am done training."
 
-    ## Scene Change
+    ## Scene Change (B4 Office Hours - Dormitory Hallway)
+
+    "Why did I do that, why did I do that, why did I do that."
+
+    "As soon as she opens the door to my office she'll see that it's me."
+
+    "What then?"
+
+    h "{i}I can explain.{/i}"
+
+    "Then what! Tell her I, a temple nun, lied to her in the confessional?"
+
+## large text
+    hm "Sister Helen."
+
+    ### vpunch
+
+    h "S-s-sister Trinity!"
+
+    h "What brings you to this wing?"
 
     
 
