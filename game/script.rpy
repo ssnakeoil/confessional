@@ -209,14 +209,45 @@ label start:
 
     "Then what! Tell her I, a temple nun, lied to her in the confessional?"
 
-## large text
-    hm "Sister Helen."
+    "I can't do that."
 
-    ### vpunch
+## large text
+    hm "Sister Helen." with vpunch
 
     h "S-s-sister Trinity!"
 
     h "What brings you to this wing?"
+
+    t "You have a visitor for office hours..."
+
+    "A woman emerged from behind her."
+
+    "I gave a slight head nod instincttively while holding eye contact with the so-called visitor."
+
+    "She went pale, as if having seen a ghost."
+
+    hm "I-I apologize, I've just finished training and I'm a bit fatigued."
+
+    h "Oh, is that so..."
+
+    "Though she still had yet to formally introduce herself, the tone of her voice had already given her away to me."
+
+    "In front of me was the knight from yesterday, Cithara."
+
+    h "I'm very sorry to hear that."
+
+    h "You came all this way to visit me, at least let me offer you some tea and a place to sit while you catch your breath."
+
+    "The question was: how long would she keep this up?"
+
+    c "Oh-ah no, I couldn't possibly... I should really... retire to my quarters..."
+
+    "Her hesitation only made me more eager to capture her."
+
+    "I've made up my mind: I need to see where this goes."
+
+    ###CHOICE
+    "But should I be patient and wait until she tells me who she is or reveal that I know it's her?"
 
     
 
