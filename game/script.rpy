@@ -1,256 +1,202 @@
-﻿define h = Character("Helen")
-define f = Character("Mother Fatima")
-define hm = Character("???")
-define c = Character("Cithara")
-define t = Character("Sister Trinity")
+﻿label start:
 
-label start:
+    $ save_name = "Meeting Cassia"
+    ##Modest room, morning light pouring in
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    define H = Character("[h]")
 
-    #scene bg room
+    python:
+        h = renpy.input("What is your name?")
+        h = h.strip()
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+        if not h:
+            h = "Helen"
 
-    #show eileen happy
+        if fake_name:
+            h = "\"Florence\""
 
-    # These display lines of dialogue.
+    "I am Sister [h], a nun of the temple of the Goddess of the Mountain."
 
-    #e "You've created a new Ren'Py game."
+    "Not a very pious one, but I can at least say that I try my best to serve my community."
 
-    #e "Once you add a story, pictures, and music, you can release it to the world!"
+    "My days consist of morning prayer, studying, cleaning around the temple, and finally a form of charity work of our choosing."
 
+    "This charity is simply a way that we can serve the community with our abilities."
 
-    ################# START #################
+    "Being quite nosey and fascinated in human affairs, I found myself in counseling and confessional work."
 
-    #(View of blue sky, clouds)
+    "We, the temple nuns dedicated to this charity, alternate the days that we hear confessions, then devote the rest of our time to those that need a bit more help during our “office hours."
 
-    "In recent years I thought I was quite content with life."
+    "I've quite enjoyed this work for my five years here, but considering the mellow nature of the locals and the remoteness of this mountain settlement, it's rare to encounter anything out of the ordinary."
 
-    "But as time goes by, I'm starting to realize…"
+    "Thus, when we took in a passing caravan, I found myself in quite the pickle."
 
-    "I want to be free."
+    ## Library
 
-    "Finally free. Truly free."
+    "It was the first night of the caravan's arrival."
 
-    "No matter how far I think I get from my problems, I always end up where I started."
+    "Their arrival was unexpected, but we are always well prepared to house guests at the temple."
 
-    "I entered the cloister in order to help pay off my family's debt to the temple, but…"
+    "I had just completed passing out blankets for the night in the visitor bunks…"
 
-    "In the end I can't help but feel unfulfilled."
+    "The bustle had me a bit energized, so I decided to visit the temple library to read for an hour or two before heading to bed."
 
-    #"(Transition to room, light pours in.)"
+    H "What should I read…"
 
-    "My life at the temple has been monotonous, but I can't really complain."
+    "I made haste as I headed to the \"fun\" aisles, or in other words… romance literature."
 
-    "I get a warm meal three times a day."
+    "The other people who were in the library seemed to be busy studying or far away, but I looked behind me to make sure no one was looking before turning the corner."
 
-    "My job is boring, but easy enough."
+    "Big mistake. As I hastily stepped into the aisle, I bumped into a woman hard enough to nearly topple us over if she had not had the reflexes of a cat somehow."
 
-    "Most of the day is spent praying. Part of it is charity work, studying or cleaning around the temple."
+    Hm "Woah–!!" with vpunch
 
-    "Nothing crazy, just quiet."
+    "Before I knew it I was covering her mouth with my hand, shushing her with the other."
 
-    "In my time off, I try to read or journal."
+    "I slowly removed my hand and watched as she stared at me, completely stunned mute."
 
-    "No reading material is barred from temple nuns despite what people are led to believe as temple outsiders…"
+    menu:
+        "\"Sorry. I don't want the others to know that I'm here.\"":
+            "A smirk crept onto her lips. {h}I instinctively swallowed."
+            pass
 
-    "And… well…"
+        "Don't say anything.":
+            "She furrowed her brows at my silence."
+            "Regardless, nodded, an unspoken promise to stay quiet."
+            pass
 
-    "I'll never find nor marry the woman of my dreams while rotting away in the cloister…"
+    Hm "A nun reading romantic literature… How scandalous."
+    "I sighed and massaged a vein in my forehead that suddenly felt prominent."
 
-    "Nor will I be traveling particularly far to fight any dragons…"
-
-    "But I can at least imagine myself in a world where I could for a couple moments every day."
-
-    f "Sister Helen… It is your turn to receive confessions today."
-
-    h "Ah… It slipped my mind, Mother Fatima… I will make my way-"
-
-    f "See to it. A woman has been waiting in the booth since before you leisurely entered the sacristy."
-
-    h "..."
-
-    f "...I apologize for speaking over you, but I fear this is becoming regular."
-
-    f "There's only so much I can do to keep you at the temple. The other mothers are starting to notice your… carefree attitude."
-
-    h "It won't happen again, Mother Fatima."
-
-    "She looked worried, but content with the contents of our brief meeting."
-
-    f "Very well."
-
-    ## Scene Change
-
-    "I made my way to the confessional booth in a hurry."
-
-    "The person behind the screen stirred as the sliding door behind me snuffed out what remained of the natural light."
-
-    "I lit a candle and took my seat."
-
-    h "Were you waiting long?"
-
-    "I started calmly."
-
-    hm "Not at all, ...{h}m-mother."
-
-    "There was a hesitation in her voice,  with something I could only assume was... {h}confusion?"
-
-    "I couldn't hold back a light giggle."
-
-    hm "Ah-I'm.. I-I don't do this often. I'm sorry if I did something wrong..."
-
-    "It seems the giggle may have sent her into a panic."
-
-    h "I apologize. I should not have laughed."
-
-    h "You have done nothing wrong. I am here to listen."
-
-    h "...To more than just your confession, if you wish."
-
-    hm "..."
-
-    h "How about we start with names? I am Sister Helen."
-
-    hm "...I'm Dame Cithara... My mom named me after Erato's lyre."
-
-    h "Erato's lyre..."
-
-    "I made a useless mental note of the origin of the name, knowing full well I would never meet this stranger again."
-
-    h "A beautiful name."
-
-    c "As is yours, Sister Helen."
-
-    "My cheeks flushed as I tried to shake off the strange energy that had filled the booth."
-
-    h "What brings you to the booth today, Cithara?"
-
-    c "I'm afraid I'm here to confess my sins, Sister Helen."
-
-    c "For the temple has been so hospitable to myself and the other knights and yet I covet the attention of a temple nun."
-
-    "I halted in my seat, processing what she had just said."
-
-    h "The attention of a temple nun?"
-
-    h "{i}What could you possibly mean by that?{/i}"
-
-    "Is what I wanted to say, but I needed to be careful with what I said next."
-
-    c "I happened to see her in the library one passing night."
-
-    c "At first, I was simply intrigued. But as I scanned the book in her hands, I realized it was one of my favorite anthologies."
-
-    c "I did not dare approach her for my heart was set on her from that moment."
-
-    "I could feel my own heart racing as I listened to her account of events."
-
-    h "Was this anthology perchance a collection of poetry?"
-
-    c "How did you know?"
-
-    "My heart lept into my throat, but I fought with it to give some semblance of composure."
-
-    h "Poetry is very popular among the nuns in the temple."
-
-    "A lie. A bold-faced lie in the house of the holy pantheon. But my anonymity was at stake."
-
-    "Was it true that she could simply ask for my name and find out it was me all along?"
-
-    "Of course, but I could not let this leave this booth."
-
-    "The sisters were no more interested in poetry than they were in the process of milling flour."
-
-    "Hell, I only picked it up because one of the poems were mentioned in a smutty romance novel I was reading beforehand."
-
-    "But a romantic scandal? The temple would go absolutely feral."
-
-    c "I was told that the temple nuns could help me to sort through these thoughts through some form of counseling."
-
-    "A moment of silence passed where I considered lying and refusing her, but my conscience prevailed."
-
-    h "This is true, we at the temple are trained in many trades in order to better serve our community."
-
-    c "Then you'll help me get rid of these feelings?"
-
-    h "Well, Cithara... Fortunately, there is nothing in our teachings that says there is anything wrong with ...{h}becoming infatuated with a nun."
-
-    h "Though temple nuns rarely leave the grounds, as our days are filled with prayer and charity work."
-
-    h "I can help you to sort through your feelings, but I must ask that you do not act on them."
-
-    h "Not only for her sake, but for yours as well."
-
-    "My hand found it's way to my notepad, and I wrote down my office hours."
-
-    "I temporarily lifted the screen, being sure to remain in the shadows as I handed her the paper."
-
-    h "Please return at any of these times and we will continue your counseling."
-
-    "She took the paper and paused to read it."
-
-    c "Thank you, Sister Helen. I will come to your office as soon as I am done training."
-
-    ## Scene Change (B4 Office Hours - Dormitory Hallway)
-
-    "Why did I do that, why did I do that, why did I do that."
-
-    "As soon as she opens the door to my office she'll see that it's me."
-
-    "What then?"
-
-    h "{i}I can explain.{/i}"
-
-    "Then what! Tell her I, a temple nun, lied to her in the confessional?"
-
-    "I can't do that."
-
-## large text
-    hm "Sister Helen." with vpunch
-
-    h "S-s-sister Trinity!"
-
-    h "What brings you to this wing?"
-
-    t "You have a visitor for office hours..."
-
-    "A woman emerged from behind her."
-
-    "I gave a slight head nod instincttively while holding eye contact with the so-called visitor."
-
-    "She went pale, as if having seen a ghost."
-
-    hm "I-I apologize, I've just finished training and I'm a bit fatigued."
-
-    h "Oh, is that so..."
-
-    "Though she still had yet to formally introduce herself, the tone of her voice had already given her away to me."
-
-    "In front of me was the knight from yesterday, Cithara."
-
-    h "I'm very sorry to hear that."
-
-    h "You came all this way to visit me, at least let me offer you some tea and a place to sit while you catch your breath."
-
-    "The question was: how long would she keep this up?"
-
-    c "Oh-ah no, I couldn't possibly... I should really... retire to my quarters..."
-
-    "Her hesitation only made me more eager to capture her."
-
-    "I've made up my mind: I need to see where this goes."
-
-    ###CHOICE
-    "But should I be patient and wait until she tells me who she is or reveal that I know it's her?"
-
+    menu:
+        "\"There's nothing wrong with being a bit indulgent every now and again.\"":
+            pass
     
+    Hm "Is that so?"
 
-    # This ends the game.
+    menu:
+        "{i}Yes{/i}, that is so.":
+            pass
+    
+    H "Many nuns read… romance and the like. There is no literature that the Goddess forbids us from consuming, as knowledge is power."
+
+    Hm "Interesting… Does the Goddess forbid nuns from dating?"
+
+    menu:
+        "\"No, but it can be difficult with our duties.\" (Truth)":
+            $ honest +=1
+            Hm "That's a relief, because I might need to ask you on a date if you stay in my arms a second longer, sister."]
+            pass
+
+        "\"Yes…\" (Obvious Lie)":
+            $ lying +=1
+            Hm "Then we may need to untangle ourselves so we might not displease her all-seeing gaze, sister."
+            pass
+
+    "Suddenly I could feel the strength of her arms around me, her chest against mine."
+
+    "I couldn't fight the heat that rushed to my face as I pushed away and took a step back."
+
+    "Briefly, regret that I had ever thought to read at this hour washed over me and I wondered if I had done something to upset the Goddess."
+
+    "The thought was abandoned when a hand entered my field of vision."
+
+    Hm "My name is Cassia. I'm a knight traveling with the caravan. May I know your name?"
+
+    "Hesitantly, I placed my hand in hers and she bowed down to kiss it."
+
+    "Heat continued to radiate from my face as I bowed my head in response."
+
+    "I wished that I could control the way my body was reacting to this entire interaction."
+
+    "Something about it was just too... romantic."
+
+    "As much as I wanted to avoid advances of this nature, it was flattering nonetheless."
+
+    menu:
+        "Give real name.":
+            C "It's an honor, Sister [h]."
+            pass
+
+        "Give fake name.":
+            $ fake_name = True
+            H "I'm Sister Florence."
+            "Her brows were suddenly knit as I gave her the name of another nun."
+            C "Somehow, I feel like you're purposely trying to decieve me."
+            C "Though surely, that can't be correct?"
+            C "An honor, nonetheless, Sister [h]."
+
+    C "...If I may cut to the chase, do you believe in 'love at first sight'?"
+
+    menu:
+        "\"Excuse me?\"":
+            C "The concept that one might fall in love with another person upon their first glance at them."
+            H "I'm quite familiar with the concept, but you can't be telling me..."
+            C "That I'm in love with you already? But I am."
+            pass
+
+        "\"Don't tell me you've fallen in love with me already…\"":
+            C "But I have. For the lady and I have similar tastes in literature and she is immediately quite enjoyable to talk to (and tease)."
+            H "What was that last part?"
+            H "Actually, I don't think I care to know."
+            pass
+
+    H "Lady Cassia."
+    H "I must ask you to stop this. Literature is one thing, but I cannot indulge in something this frivolous."
+    if honest ==1:
+        H "As I stated before, nuns may date, but not casually as people outside of the temple do."
+        pass
+    if lying ==2:
+        H "As I've already stated, casual dating is prohibited among nuns."
+        C "Oh, is it only prohibited if it is casual?"
+        "I kicked myself for being unable to lie effectively. The temple has done much to strip me of such abilities."
+        if fake_name:
+            C "Speaking of which, is it normal for nuns to lie as much as you?"
+            C "Not that I'm one to criticize, it's just not what I expected from a servant of the Goddess."
+        pass
+
+    if fake_name:
+        C "If my hunch is correct, I feel you may have given me a fake name."
+        $ fake_name = False
+        C "Isn't that right, Sister [h]?"
+        "I wasn't sure how she was able to catch my bluff so quickly but I had to concede, or else this web would never stop growing."
+        H "It's true… But how did you know?"
+        C "You gave me your name when you handed me a blanket earlier."
+        "She chuckled."
+        C "It's quite cute that you didn't remember me. Your head must have been filled with all the raunchy books you were planning to read already."
+        "I blushed, shocked and speechless." #(Shook if you will LMFAO)
+        H "I admitted my wrongdoings, Lady Cassia. I could do without the teasing!"
+        "The chuckle that escaped her this time was softer as I assumed she considered her next words carefully."
+        C "It's only natural to want to tease the one you like. Is it not?"
+        pass
+
+    C "I assure you that my interest is not casual, and if you give me a chance I will be sure to properly court you.{h} Knight's honor."
+
+    C "Perhaps I'm reading too much into it, but I believe you're at least a bit curious about me as well… surely you could give me a chance?"
+
+    C "Though if I misunderstood I shall repent for making you uncomfortable and leave you alone."
+
+    menu:
+        "How can I trust you?":
+            "Nuns aren't supposed to judge character based on appearance, but since this was about personal matters (of the heart, at that), the Goddess would have to forgive me for being discerning about a potential life partner."
+            pass
+        
+    H "You're a traveler passing by. If we did get on, would you be willing to stay here? Would I join your caravan?"
+
+    C "Aw, you're planning already? And I thought I was the only one that fell in love."
+
+    menu:
+        "\"I'm being pragmatic!\"":
+            H "I just worry about the outcomes of pursuing something so volatile! For both of us, don't misunderstand."
+            pass
+
+    C "Does that mean I have permission to court you?"
+
+    H "..."
+
+    C "This is a temporary assignment for me. Do not worry..."
+    C "If you end up irrevocably in love with me I would simply need to ask to be permanently stationed here after escorting the caravan."
+
+
 
     return
